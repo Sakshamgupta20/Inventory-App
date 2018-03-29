@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.saksham.inventory.EditorActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        style="@style/CategoryStyle"
+        android:text="Overview"/>
+        <EditText
+            android:id="@+id/edit_item_name"
+            android:hint="Product Name"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:inputType="textCapWords" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:text="Quantity Available"
+        style="@style/CategoryStyle"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+        android:id="@+id/edit_item_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp" />
+        <EditText
+            android:id="@+id/edit_item_quantity"
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textCapWords" />
+        <ImageButton
+            android:id="@+id/edit_item_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_remove_black_24dp" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Restock"
+            style="@style/CategoryStyle"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/edit_item_readd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_black_24dp" />
+            <EditText
+                android:id="@+id/edit_item_restock"
+                android:text="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textCapWords" />
+            <ImageButton
+                android:id="@+id/edit_item_reremove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_remove_black_24dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        style="@style/CategoryStyle"
+        android:text="Price" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+        <EditText
+            android:id="@+id/edit_item_price"
+            android:hint="0"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:fontFamily="sans-serif-light"/>
+           <ImageView
+               android:id="@+id/edit_item_image"
+               android:src="@drawable/ic_attach_money_black_24dp"
+               style="@style/EditorUnitsStyle"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        style="@style/CategoryStyle"
+        android:text="Supplier Details" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_item_supplier"
+            android:hint="Name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_item_number"
+                android:hint="E-mail Address"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="textEmailAddress" />
+></LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
